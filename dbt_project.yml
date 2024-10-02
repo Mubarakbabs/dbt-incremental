@@ -1,9 +1,10 @@
+version: 2
 
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'incremental_models'
-version: '1.0.0'
+version: '2.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'incremental_models'
@@ -34,3 +35,5 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    incremental:
+      +materialized: incremental
